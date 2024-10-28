@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validacion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="registroForm">
+
+        <h2>Formulario de Registro</h2>
+
+        <form id="formulario" novalidate>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" minlength="3" required autocomplete="off">
+            <div class="error" id="errorNombre"></div>
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" minlength="3" required autocomplete="off">
+            <div class="error" id="errorApellido"></div>
+            <br>
+
+            <label for="documento">Documento:</label>
+            <input type="text" name="documento" id="documento" minlength="3" required autocomplete="off">
+            <div class="error" id="errorDocumento"></div>
+            <br>
+
+            <label for="email">Documento:</label>
+            <input type="email" name="email" id="email" required >
+            <div class="error" id="errorEmail"></div>
+            <br>
+
+        </form>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
